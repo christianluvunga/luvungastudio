@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Luvunga Studio – Applications et projets numériques</title>
+<meta name="description" content="Luvunga Studio : applications et projets numériques créés à Toulouse par Christian Luvunga Mayedi. · Apps and digital projects made in Toulouse.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Luvunga Studio">
+<meta property="og:description" content="Applications et projets numériques. · Apps and digital projects.">
+<meta property="og:url" content="https://luvunga.com/">
+<meta property="og:image" content="https://luvunga.com/og-image.png">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0b1120">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20512%20512%22%3E%3Crect%20x=%224%22%20y=%224%22%20width=%22504%22%20height=%22504%22%20rx=%22112%22%20fill=%22%230a1020%22%20stroke=%22%2314675a%22%20stroke-width=%224%22/%3E%3Cdefs%3E%3ClinearGradient%20id=%22gb3%22%20x1=%220%22%20y1=%220%22%20x2=%221%22%20y2=%221%22%3E%3Cstop%20offset=%220%22%20stop-color=%22%2334d399%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22%2310c98a%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%3Cg%20transform=%22translate%28-14%200%29%22%3E%3Cpath%20d=%22M150%20108H228V322H372L330%20404H150Z%22%20fill=%22url%28%23gb3%29%22%20stroke=%22url%28%23gb3%29%22%20stroke-width=%2214%22%20stroke-linejoin=%22round%22/%3E%0A%0A%3Crect%20x=%22276%22%20y=%22112%22%20width=%2260%22%20height=%2260%22%20rx=%2212%22%20transform=%22rotate%2845%20306%20142%29%22%20fill=%22%23f1f5f9%22/%3E%3C/g%3E%3C/svg%3E">
+<style>
+:root{--bg:#0b1120;--bg2:#124045;--card:#0d1629;--line:#1b2a44;--em:#10c98a;--em2:#34d399;--txt:#f1f5f9;--mut:#9fb0c8}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:var(--bg);color:var(--txt);line-height:1.6;min-height:100vh;
+ background-image:radial-gradient(900px 500px at 50% -120px,rgba(16,201,138,.22),transparent 70%),linear-gradient(180deg,var(--bg2) 0,var(--bg) 620px)}
+a{color:var(--em2)}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 0;gap:12px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.08em;font-size:.95rem;color:var(--txt);text-decoration:none}
+.brand svg{width:30px;height:30px}
+nav{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+nav a{color:#cbd5e1;text-decoration:none;font-weight:600;font-size:.95rem}
+nav a:hover{color:var(--em2)}
+.lang{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:4px;background:rgba(13,22,41,.7)}
+.lang button{font:inherit;font-weight:700;font-size:.85rem;color:var(--mut);background:none;border:0;border-radius:999px;padding:6px 14px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:linear-gradient(135deg,var(--em),var(--em2));color:#04231a}
+a:focus-visible,.lang button:focus-visible,.btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.hero{text-align:center;padding:50px 0 56px}
+.hero .mark{width:96px;height:96px;margin:0 auto 22px;border-radius:26px;box-shadow:0 0 70px rgba(52,211,153,.35)}
+.hero .mark svg{width:100%;height:100%;display:block}
+h1{font-size:clamp(2.2rem,6.5vw,3.8rem);letter-spacing:-.03em;line-height:1.08;margin-bottom:16px}
+h1 span{color:var(--em2)}
+.sub{font-size:clamp(1.05rem,2.6vw,1.3rem);color:#cbd5e1;max-width:660px;margin:0 auto 28px}
+.btn{display:inline-flex;align-items:center;gap:8px;background:#fff;color:#0b1120;text-decoration:none;font-weight:800;padding:13px 24px;border-radius:999px;box-shadow:0 12px 40px rgba(52,211,153,.3);transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--txt);border:1px solid var(--line);box-shadow:none}
+.btn.small{padding:9px 18px;font-size:.92rem}
+section{margin-bottom:56px}
+h2{font-size:1.6rem;letter-spacing:-.02em;margin-bottom:8px;text-align:center}
+.lead{text-align:center;color:var(--mut);margin-bottom:26px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px;display:flex;flex-direction:column;gap:10px}
+.card img{width:64px;height:64px;border-radius:15px;box-shadow:0 0 30px rgba(52,211,153,.3)}
+.card .ph{width:64px;height:64px;border-radius:15px;border:1px dashed #2a4a5a;display:flex;align-items:center;justify-content:center;color:var(--mut);font-size:1.6rem}
+.card .tag{align-self:flex-start;font-size:.78rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--em2);background:#0a383f;border:1px solid #14675a;border-radius:999px;padding:3px 10px}
+.card .tag.soon{color:var(--mut);background:transparent;border-color:var(--line)}
+.card h3{font-size:1.25rem}
+.card p{color:var(--mut);font-size:.98rem;flex:1}
+.card .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
+.about{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:28px;max-width:760px;margin:0 auto}
+.about p{color:#cbd5e1;margin-bottom:10px}
+.about p:last-child{margin-bottom:0}
+.contact{text-align:center}
+.contact .btn{margin-top:6px}
+footer{border-top:1px solid var(--line);padding:26px 0 40px;text-align:center;color:var(--mut);font-size:.92rem}
+footer a{margin:0 8px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+ <header>
+  <a class="brand" href="#top" aria-label="Luvunga Studio">
+   <svg viewBox="0 0 512 512" aria-hidden="true"><rect x="4" y="4" width="504" height="504" rx="112" fill="#0a1020" stroke="#14675a" stroke-width="4"/><defs><linearGradient id="gb1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#34d399"/><stop offset="1" stop-color="#10c98a"/></linearGradient></defs>
+<g transform="translate(-14 0)"><path d="M150 108H228V322H372L330 404H150Z" fill="url(#gb1)" stroke="url(#gb1)" stroke-width="14" stroke-linejoin="round"/>
+
+<rect x="276" y="112" width="60" height="60" rx="12" transform="rotate(45 306 142)" fill="#f1f5f9"/></g></svg>
+   LUVUNGA STUDIO</a>
+  <nav>
+   <a href="#projets" data-fr="Projets" data-en="Projects"></a>
+   <a href="#apropos" data-fr="À propos" data-en="About"></a>
+   <a href="#contact" data-fr="Contact" data-en="Contact"></a>
+   <div class="lang" role="group" aria-label="Language / Langue">
+    <button type="button" data-set="fr" aria-pressed="true">FR</button>
+    <button type="button" data-set="en" aria-pressed="false">EN</button></div>
+  </nav>
+ </header>
+
+ <section class="hero" id="top">
+  <div class="mark"><svg viewBox="0 0 512 512" aria-hidden="true"><rect x="4" y="4" width="504" height="504" rx="112" fill="#0a1020" stroke="#14675a" stroke-width="4"/><defs><linearGradient id="gb2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#34d399"/><stop offset="1" stop-color="#10c98a"/></linearGradient></defs>
+<g transform="translate(-14 0)"><path d="M150 108H228V322H372L330 404H150Z" fill="url(#gb2)" stroke="url(#gb2)" stroke-width="14" stroke-linejoin="round"/>
+
+<rect x="276" y="112" width="60" height="60" rx="12" transform="rotate(45 306 142)" fill="#f1f5f9"/></g></svg></div>
+  <h1 data-fr="Des applications <span>utiles et soignées</span>" data-en="Useful, <span>carefully built</span> apps"></h1>
+  <p class="sub" data-fr="Luvunga Studio réunit les applications et projets numériques de Christian Luvunga Mayedi, conçus et développés à Toulouse." data-en="Luvunga Studio brings together the apps and digital projects of Christian Luvunga Mayedi, designed and built in Toulouse."></p>
+  <a class="btn" href="#projets" data-fr="Voir les projets" data-en="See the projects"></a>
+ </section>
+
+ <section id="projets" aria-labelledby="p">
+  <h2 id="p" data-fr="Projets" data-en="Projects"></h2>
+  <p class="lead" data-fr="Ce que nous construisons, et ce qui arrive." data-en="What we build, and what is coming."></p>
+  <div class="grid">
+   <article class="card">
+    <img src="safevault/icon.png" alt="SafeVault" width="64" height="64">
+    <span class="tag" data-fr="Disponible" data-en="Available"></span>
+    <h3>SafeVault</h3>
+    <p data-fr="Gestionnaire de mots de passe 100 % local pour Android : chiffré, sans compte, sans cloud, sans publicité." data-en="100% local password manager for Android: encrypted, no account, no cloud, no ads."></p>
+    <div class="row">
+     <a class="btn small" href="safevault/" data-fr="Découvrir" data-en="Discover"></a>
+     <a class="btn small ghost" href="https://play.google.com/store/apps/details?id=com.christianluvunga.safevault" rel="noopener">Google Play</a>
+    </div>
+   </article>
+   <article class="card">
+    <div class="ph" aria-hidden="true">+</div>
+    <span class="tag soon" data-fr="À venir" data-en="Coming soon"></span>
+    <h3 data-fr="Prochains projets" data-en="Next projects"></h3>
+    <p data-fr="D'autres applications sont en préparation. Cette page sera mise à jour à chaque nouveau lancement." data-en="More apps are in the works. This page will be updated with every new launch."></p>
+   </article>
+   <article class="card">
+    <div class="ph" aria-hidden="true">&#9670;</div>
+    <span class="tag soon" data-fr="Profil" data-en="Profile"></span>
+    <h3 data-fr="Portfolio de Christian" data-en="Christian's portfolio"></h3>
+    <p data-fr="Parcours, compétences en cybersécurité et réalisations de Christian Luvunga Mayedi." data-en="Background, cybersecurity skills and work of Christian Luvunga Mayedi."></p>
+    <div class="row"><a class="btn small ghost" href="https://christianluvunga.github.io/" rel="noopener" data-fr="Voir le portfolio" data-en="View portfolio"></a></div>
+   </article>
+  </div>
+ </section>
+
+ <section id="apropos" aria-labelledby="a">
+  <h2 id="a" data-fr="À propos" data-en="About"></h2>
+  <p class="lead" data-fr="Le studio derrière les applications." data-en="The studio behind the apps."></p>
+  <div class="about">
+   <p data-fr="Luvunga Studio est le nom sous lequel Christian Luvunga Mayedi publie ses applications et projets. Basé à Toulouse, il développe des applications Android et se forme à la cybersécurité." data-en="Luvunga Studio is the name under which Christian Luvunga Mayedi publishes his apps and projects. Based in Toulouse, he builds Android apps and is training in cybersecurity."></p>
+   <p data-fr="Le principe : des applications simples, claires sur ce qu'elles font de vos données, et sans fonctionnalités inutiles." data-en="The principle: simple apps, clear about what they do with your data, and no needless features."></p>
+  </div>
+ </section>
+
+ <section id="contact" class="contact" aria-labelledby="c">
+  <h2 id="c" data-fr="Contact" data-en="Contact"></h2>
+  <p class="lead" data-fr="Une question, une remarque, une proposition ?" data-en="A question, a remark, a proposal?"></p>
+  <a class="btn" href="mailto:chrisluvunga@gmail.com">chrisluvunga@gmail.com</a>
+ </section>
+
+ <footer>
+  <a href="safevault/terms.html" data-fr="Conditions d'utilisation SafeVault" data-en="SafeVault terms of use"></a>·
+  <a href="https://christianluvunga.github.io/safevault-privacy/" data-fr="Confidentialité SafeVault" data-en="SafeVault privacy"></a>
+  <p style="margin-top:12px">© 2026 Luvunga Studio</p>
+ </footer>
+</div>
+<script>
+(function(){
+ var titles={fr:"Luvunga Studio – Applications et projets numériques",en:"Luvunga Studio – Apps and digital projects"};
+ function set(l){
+  document.documentElement.lang=l;
+  document.querySelectorAll('[data-'+l+']').forEach(function(e){e.innerHTML=e.getAttribute('data-'+l)});
+  document.querySelectorAll('.lang button').forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute('data-set')===l?'true':'false')});
+  document.title=titles[l];
+ }
+ document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){var l=b.getAttribute('data-set');set(l);try{localStorage.setItem('ls-lang',l)}catch(e){}})});
+ var l='fr';
+ try{l=localStorage.getItem('ls-lang')||''}catch(e){}
+ if(l!=='fr'&&l!=='en'){l=((navigator.language||'fr').toLowerCase().indexOf('fr')===0)?'fr':'en'}
+ set(l);
+})();
+</script>
+</body>
+</html>
